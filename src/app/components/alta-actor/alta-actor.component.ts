@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { DatabaseService } from '../../services/database.service';
 import { Actor } from '../../classes/actor';
 import Swal from 'sweetalert2';
@@ -15,7 +15,7 @@ import { Pais } from '../../classes/pais';
 @Component({
   selector: 'app-alta-actor',
   standalone: true,
-  imports: [ReactiveFormsModule, TablaPaisesComponent],
+  imports: [ReactiveFormsModule, TablaPaisesComponent, RouterLink],
   templateUrl: './alta-actor.component.html',
   styleUrl: './alta-actor.component.css',
 })

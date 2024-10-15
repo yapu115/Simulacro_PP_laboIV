@@ -10,11 +10,12 @@ import { authService } from '../../services/auth.service';
 import { DatabaseService } from '../../services/database.service';
 import { Pelicula } from '../../classes/pelicula';
 import { TablaActoresComponent } from './tabla-actores/tabla-actores.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-alta-pelicula',
   standalone: true,
-  imports: [TablaActoresComponent, ReactiveFormsModule],
+  imports: [TablaActoresComponent, ReactiveFormsModule, RouterLink],
   templateUrl: './alta-pelicula.component.html',
   styleUrl: './alta-pelicula.component.css',
 })
