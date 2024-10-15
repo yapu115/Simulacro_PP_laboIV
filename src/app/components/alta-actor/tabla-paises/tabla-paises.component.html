@@ -1,0 +1,11 @@
+@if (paises !== null){ @for (pais of paises; track $index) {
+<li
+  class="list-group-item d-flex justify-content-between lh-sm"
+  (click)="GuardarDatos(pais)"
+>
+  <div>
+    <h6 class="my-0">{{ pais.name.common }}</h6>
+  </div>
+</li>
+
+} }

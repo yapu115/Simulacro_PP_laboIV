@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+
+@if (this.detallePelicula !== null){
+<h1>{{ this.detallePelicula.nombre }}</h1>
+<p (click)="mostrarPeli()">Id: {{ this.detallePelicula.id }}</p>
+<p>Tipo: {{ this.detallePelicula.tipo }}</p>
+<p>Fecha de estreno: {{ this.detallePelicula.fechaDeEstreno }}</p>
+<p>
+  Cantidad de público:
+  {{ this.detallePelicula.cantidadDePublico }}
+</p>
+<p>Protagonista: {{ this.detallePelicula.protagonista }}</p>
+<img src="{{ this.detallePelicula.fotoDePelicula }}" alt="" />
+}

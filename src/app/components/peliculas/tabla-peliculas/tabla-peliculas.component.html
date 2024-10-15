@@ -1,0 +1,4 @@
+<router-outlet></router-outlet>
+@for (peli of this.peliculas; track $index) {
+<p (click)="GuardarDatos(peli)">{{ peli.Nombre }}</p>
+}
