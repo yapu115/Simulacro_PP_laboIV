@@ -1,0 +1,92 @@
+[
+  {
+    "ID": 1,
+    "Nombre": "E.T. the Extra-Terrestrial",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1982-06-11",
+    "Cantidad_de_publico": 792910554,
+    "Foto_de_la_pelicula": "https://http2.mlstatic.com/D_NQ_NP_862529-MLA41756936078_052020-O.webp",
+    "Protagonista": "Henry Thomas"
+  },
+  {
+    "ID": 2,
+    "Nombre": "The Shining",
+    "Tipo": "terror",
+    "Fecha_de_estreno": "1980-05-23",
+    "Cantidad_de_publico": 46998772,
+    "Foto_de_la_pelicula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYD2w9WTpwNY_tvIVts88QyDY_Jj9nJYosxg&s",
+    "Protagonista": "Jack Nicholson"
+  },
+  {
+    "ID": 3,
+    "Nombre": "Ghostbusters",
+    "Tipo": "comedia",
+    "Fecha_de_estreno": "1984-06-08",
+    "Cantidad_de_publico": 296021921,
+    "Foto_de_la_pelicula": "https://http2.mlstatic.com/D_NQ_NP_969115-MLA52198735689_102022-O.webp",
+    "Protagonista": "Bill Murray"
+  },
+  {
+    "ID": 4,
+    "Nombre": "Back to the Future",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1985-07-03",
+    "Cantidad_de_publico": 388778083,
+    "Foto_de_la_pelicula": "https://postercity.com.ar/wp-content/uploads/2017/07/Back-To-The-Future.jpg",
+    "Protagonista": "Michael J. Fox"
+  },
+  {
+    "ID": 5,
+    "Nombre": "A Nightmare on Elm Street",
+    "Tipo": "terror",
+    "Fecha_de_estreno": "1984-11-09",
+    "Cantidad_de_publico": 57298096,
+    "Foto_de_la_pelicula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJQdS8GXnsa3Hr-DfTRg3gFm1zFdZB4qfhQ&s",
+    "Protagonista": "Heather Langenkamp"
+  },
+  {
+    "ID": 6,
+    "Nombre": "The Breakfast Club",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1985-02-15",
+    "Cantidad_de_publico": 51648139,
+    "Foto_de_la_pelicula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbSQ9dy8WChCujfzQGa5t1aTqFK2TMTn_9w&s",
+    "Protagonista": "Emilio Estevez"
+  },
+  {
+    "ID": 7,
+    "Nombre": "Raiders of the Lost Ark",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1981-06-12",
+    "Cantidad_de_publico": 389925971,
+    "Foto_de_la_pelicula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYgb2R0qaUumaKjxdieTE5IinuNzrjUAMSZw&s",
+    "Protagonista": "Harrison Ford"
+  },
+  {
+    "ID": 8,
+    "Nombre": "Ferris Bueller's Day Off",
+    "Tipo": "comedia",
+    "Fecha_de_estreno": "1986-06-11",
+    "Cantidad_de_publico": 70713624,
+    "Foto_de_la_pelicula": "https://m.media-amazon.com/images/I/61azmcuN4mL._AC_UF1000,1000_QL80_.jpg",
+    "Protagonista": "Matthew Broderick"
+  },
+  {
+    "ID": 9,
+    "Nombre": "The Terminator",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1984-10-26",
+    "Cantidad_de_publico": 78371900,
+    "Foto_de_la_pelicula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRry28IueZ1aeTcpaHmHsd3qgcllJAX4kOSZw&s",
+    "Protagonista": "Arnold Schwarzenegger"
+  },
+  {
+    "ID": 10,
+    "Nombre": "Die Hard",
+    "Tipo": "otros",
+    "Fecha_de_estreno": "1988-07-15",
+    "Cantidad_de_publico": 141482519,
+    "Foto_de_la_pelicula": "https://http2.mlstatic.com/D_NQ_NP_945302-MLA76106020099_042024-O.webp",
+    "Protagonista": "Bruce Willis"
+  }
+]

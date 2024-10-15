@@ -1,0 +1,1 @@
+import{Ra as n,Sa as s,Ya as a,aa as o,ab as r}from"./chunk-V3WOVX3B.js";import"./chunk-BBVEFKYK.js";var c=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-actores"]],standalone:!0,features:[r],decls:2,vars:0,template:function(e,i){e&1&&(n(0,"p"),a(1,"actores works!"),s())}})};export{c as ActoresComponent};

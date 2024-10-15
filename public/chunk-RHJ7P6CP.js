@@ -1,0 +1,1 @@
+import{Ra as l,Sa as n,Ya as o,aa as a,ab as i}from"./chunk-V3WOVX3B.js";import"./chunk-BBVEFKYK.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-alta-pelicula"]],standalone:!0,features:[i],decls:2,vars:0,template:function(e,s){e&1&&(l(0,"p"),o(1,"alta-pelicula works!"),n())}})};export{p as AltaPeliculaComponent};
