@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Actor } from '../classes/actor';
 import Swal from 'sweetalert2';
+import { Pelicula } from '../classes/pelicula';
 
 @Injectable({
   providedIn: 'root',
@@ -44,31 +45,47 @@ export class DatabaseService {
     // colUsuarios.add({ ...usuario });
   }
 
-  TraerUsuario() {
-    const colUsuarios = this.firestore.collection('usuarios');
+  AgregarPelicula(p: Pelicula) {
+    const colPeliculas = this.firestore.collection('peliculas');
 
-    // ACA ESTÁ LA CLAVE PARA HACER EL CHAT
-    const observable = colUsuarios.valueChanges();
-    return observable;
+    const documento = colPeliculas.doc();
+    p.id = documento.ref.id;
 
-    // observable.subscribe((resultado) => {
-    //   console.log(resultado);
-    // });
+    documento
+      .set({ ...p })
+      .then((resp) => {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Pelicula Agregada',
+          showConfirmButton: false,
+          timer: 1500,
+          background: '#6c757d',
+          color: '#e5dada',
+          backdrop: false,
+        });
+      })
+      .catch((resp) => {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'error',
+          title: 'Hubo un error con la Película, intente de nuevo',
+          showConfirmButton: false,
+          timer: 1500,
+          background: '#6c757d',
+          color: '#e5dada',
+          backdrop: false,
+        });
+      });
+    // colUsuarios.add({ ...usuario });
   }
 
-  // ModificarUsuario(usuario: Usuario) {
-  //   const colUsuarios = this.firestore.collection('usuarios');
-  //   const documento = colUsuarios.doc(usuario.id);
+  TraerActores() {
+    const colChat = this.firestore.collection('actores');
 
-  //   documento.update({ ...usuario });
-  // }
-
-  // EliminarUsuario(usuario: Usuario) {
-  //   const colUsuarios = this.firestore.collection('usuarios');
-  //   const documento = colUsuarios.doc(usuario.id);
-
-  //   documento.delete();
-  // }
+    const observable = colChat.valueChanges();
+    return observable;
+  }
 
   // chat
   TraerChat() {

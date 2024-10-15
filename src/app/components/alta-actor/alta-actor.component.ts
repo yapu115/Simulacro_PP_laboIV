@@ -6,7 +6,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { authService } from '../../services/auth.service';
 import { DatabaseService } from '../../services/database.service';
 import { Actor } from '../../classes/actor';
 import Swal from 'sweetalert2';
@@ -37,7 +36,7 @@ export class AltaActorComponent {
   mensajeEdad: string = '';
   mensajePais: string = '';
 
-  constructor(protected auth: authService, protected db: DatabaseService) {
+  constructor(protected db: DatabaseService) {
     this.formAlta = new FormGroup({
       nombre: new FormControl('', [
         Validators.required,

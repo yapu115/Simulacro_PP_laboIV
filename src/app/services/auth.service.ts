@@ -21,25 +21,7 @@ export class authService {
 
   // Guards
 
-  constructor(private db: DatabaseService) {
-    this.authSubscription = this.auth.onAuthStateChanged((auth) => {
-      if (auth?.email) {
-        this.usuario = auth;
-
-        const observable = db.TraerUsuario();
-        observable.subscribe((resultado) => {
-          resultado.forEach((usuario) => {
-            this.usuarioDeDB = usuario;
-            if (this.usuarioDeDB.email == this.usuario.email) {
-              this.usuario = this.usuarioDeDB;
-            }
-          });
-        });
-      } else {
-        this.usuario = null;
-      }
-    });
-  }
+  constructor(private db: DatabaseService) {}
 
   RegistrarUsuario({ email, contrasena }: any) {
     return createUserWithEmailAndPassword(this.auth, email, contrasena);

@@ -1,0 +1,11 @@
+@if (actores !== null){ @for (a of actores; track $index) {
+<li
+  class="list-group-item d-flex justify-content-between lh-sm"
+  (click)="GuardarDatos(a)"
+>
+  <div>
+    <h6 class="my-0">{{ a.nombre }} {{ a.apellido }}</h6>
+  </div>
+</li>
+
+} }
